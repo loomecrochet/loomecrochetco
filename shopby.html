@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Loomé Crochet Co</title>
+<link rel="stylesheet" type="text/css" href="shop.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="top-bar">
+    FREE DELIVERY OVER ORDER OF ₹99
+</div>
+
+<header>
+
+<div></div>
+
+<div class="logo">
+    <h1>LOOMÉ</h1>
+    <span>CROCHET CO.</span>
+</div>
+
+<div class="icons">
+    <span><i class="fa-brands fa-pinterest"></i></span>
+    <span><i class="fa-brands fa-whatsapp"></i></span>
+    <span>♡</span>
+</div>
+<div class="mobile-nav">
+    <i class="fa-solid fa-bars"></i>
+</div>
+</header>
+
+<nav class="site-nav-menu">
+    <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="shopby.html">SHOP BY</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="guide.html">GUIDELINES</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+</nav>
+<main>
+    <form>
+        <input type="text" name="" placeholder="What do you want?" id="myinput">
+        <input type="submit" name="" value="Search">
+    </form>
+    <div class="container">
+        <div>
+            <img src="images/heart trinklet dish.jpg">
+            <h4>Heart Trinklet Dish </h4>
+            <span>₹399</span>
+        </div>
+         <div>
+            <img src="images/coaster.jpg">
+            <h4>Coaster</h4>
+            <span>₹100</span>
+        </div>
+        <div>
+            <img src="images/keychain.jpg">
+            <h4>Keychain </h4>
+            <p>Made with own customization</p>
+            <span>Rated as per which type of keychains </span>
+        </div>
+          <div>
+            <img src="images/bow hair clip.jpeg">
+            <h4> Large Bow Hair Clip</h4>
+            <span>₹250</span>
+        </div>
+        <div>
+            <img src="images/shrug.jpg">
+            <h4>Fairy Shrug</h4>
+            <span>₹1000</span>
+        </div>
+         <div>
+            <img src="images/bouquet.jpg">
+            <h4>Bouquet</h4>
+            <p>Made with own customization</p>
+            <span>Rated as per which type of flowers</span>
+        </div>
+       
+        <div>
+            <img src="images/flower hair clip.jpeg">
+            <h4>Flower Hair Clip</h4>
+            <span>100 per 2 piece </span>
+        </div>
+         <div>
+            <img src="images/phone charms.jpg">
+            <h4>Phone Charms </h4>
+            <p>Made with own customization</p>
+            <span>Rated as per which type of charms</span>
+        </div>
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".mobile-nav i").click(function(){
+            $(".site-nav-menu").toggleClass("mobile-menu");
+        });
+    })
+        $(document).ready(function(){
+            $("#myinput").on("keyup", function(){
+                var value= $(this).val().toLowerCase();
+                $(".container div").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                })
+            });
+        });
+</script>
+</body>
+</html>
