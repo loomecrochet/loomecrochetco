@@ -123,6 +123,20 @@ text-align:center;
 padding:.5rem;
 box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 }
+.product-card button {
+    display: block;
+    margin: 15px auto 5px;
+    padding: 10px 20px;
+    border: none;
+    background: #556b63;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-card button:hover {
+    background: #40544d;
+}
 @media(max-width:600px){
 
 header{
